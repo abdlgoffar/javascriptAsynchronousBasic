@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Interval</title>
+</head>
+<body>
+<h1 id="header"></h1>
+<script>
+    //callback async adalah cara untuk membuat eksekusi program secara asyncronus
+    function setTime(){
+        const header = document.getElementById("header");
+        header.textContent = new Date().toString();
+    }
+
+    setInterval(setTime, 5000);//contoh callback async set interval
+    console.info("Program Selesai");
+
+</script>
+</body>
+</html>

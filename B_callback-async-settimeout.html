@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Set Timeout</title>
+</head>
+<body>
+<script>
+        //callback async adalah cara untuk membuat eksekusi program secara asyncronus
+    function addElement(){
+        const header = document.createElement("h1");
+        header.textContent = "Hello Abdul Goffar' How Are You";
+
+        document.body.appendChild(header);
+    }
+
+    setTimeout(addElement, 5000);//contoh callback async set timeout
+    console.info("Program Selesai");
+
+</script>
+</body>
+</html>
